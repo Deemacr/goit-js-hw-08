@@ -52,10 +52,13 @@ function onClickHandler(event) {
 }
 
 function onCloseHandler(event) {
-	if (event.target.nodeName === "I" || event.target.nodeName === "BUTTON") {
+	if (event.target.nodeName === "BUTTON") {
+		refs.lightbox.src = ""
 		refs.lightbox.classList.remove('is-open');
 	}
 }
 
+
 refs.galleryList.addEventListener('click', onClickHandler);
 refs.btn.addEventListener('click', onCloseHandler);
+
