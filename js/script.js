@@ -53,7 +53,8 @@ function onClickHandler(event) {
 
 function onCloseHandler(event) {
 	if (event.target.nodeName === "BUTTON") {
-		refs.lightbox.src = ""
+		refs.lightbox.querySelector('.lightbox__image').src = "";
+		refs.lightbox.querySelector('.lightbox__image').alt = "";
 		refs.lightbox.classList.remove('is-open');
 	}
 }
