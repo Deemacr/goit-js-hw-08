@@ -40,8 +40,6 @@ const createListItems = (arr) => {
 createListItems(images);
 
 
-
-
 function onClickHandler(event) {
 	event.preventDefault();
 	if (event.target.nodeName === 'IMG') {
@@ -62,4 +60,5 @@ function onCloseHandler(event) {
 
 refs.galleryList.addEventListener('click', onClickHandler);
 refs.btn.addEventListener('click', onCloseHandler);
+
 
